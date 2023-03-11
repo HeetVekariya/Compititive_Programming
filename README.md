@@ -1,2 +1,2 @@
-# Leetcode_Daily_Problems
-Solution for LeetCode Daily Problems.
+# Competitive Programming
+->CP a brain injury, caused by abnormal development of the brain.
