@@ -1,0 +1,40 @@
+//Author  : Heet Vekariya
+//Purpose : Non alternating deck (easy version)
+//Date    : 10/3/2023
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin >> t;
+
+    while(t--) {
+        int n;
+        cin >> n;
+
+        int a = 0, b = 0, i = 0;
+        while(true) {
+            if(i % 4 == 0 || i % 4 == 1) {
+                if(n <= i) {
+                    a += n;
+                    break;
+                } else {
+                    a += i;
+                    n -= i;
+                }
+            } else if (i % 4 == 2 || i % 4 == 3) {
+                if(n <= i) {
+                    b += n;
+                    break;
+                } else {
+                    b += i;
+                    n -= i;
+                }
+            }
+            i++;
+        }
+        cout << a << ' ' << b << endl;
+    }
+    return 0;
+}
